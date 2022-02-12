@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "2c7f8e57-e90e-4e38-9e3d-978e78db5f7c",
+		"name": "Mobio Solutions",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/sudippahari/Documents/Screenshot 2022-02-08 at 5.10.26 PM.png"
+						},
+						{
+							"key": "name",
+							"value": "sudip",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "sudip@gmail.com",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "dob",
+							"value": "1995-02-11",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "abcd12345",
+							"type": "default",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/addImage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"addImage"
+					]
+				},
+				"description": "signup"
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/sudippahari/Documents/Screenshot 2022-02-08 at 5.10.26 PM.png"
+						},
+						{
+							"key": "name",
+							"value": "sudip",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "sudip@gmail.com",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "dob",
+							"value": "1995-02-11",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "abcd12345",
+							"type": "default",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/addImage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"addImage"
+					]
+				},
+				"description": "signup"
+			},
+			"response": []
+		},
+		{
+			"name": "profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMDY4MTY3MDdhMTUzOTgyMzZmYjY4NiIsIm5hbWUiOiJzdWRpcCIsImlhdCI6MTY0NDU5Mzg0NywiZXhwIjoxNjQ0NTk3NDQ3fQ.5DJ50WFW-3RhLDA5lmwpXdwzJu27QI4VVIRpzSFt1oE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/profile/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"profile",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

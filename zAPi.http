@@ -1,0 +1,31 @@
+###
+GET http://localhost:3000
+
+
+
+###
+POST http://localhost:3000/auth/registration
+content-type: application/json
+
+{
+  "name": "sudip",
+  "email": "sudip@gmail.com",
+  "password": "abcd123",
+  "dob": "1993-12-21"
+}
+
+
+###
+POST http://localhost:3000/auth/login
+content-type: application/json
+
+{
+  "email": "sudip@gmail.com",
+  "password": "abcd123"
+}
+
+
+###
+GET http://localhost:3000/profile/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMDYxNzE2OWVkYTI3YmEzNjk3YTA3MiIsIm5hbWUiOiJzdWJoYWRpcCIsImlhdCI6MTY0NDU3NDk1NiwiZXhwIjoxNjQ0NTc4NTU2fQ.iio8zJkyZHiLiVdrf8vRdWkHvLFgEpcbqSEgvwn6sEc
+
